@@ -1,0 +1,131 @@
+@import "./index.css";
+
+/* ROOT */
+.ledger-wrapper {
+  @apply
+  relative 
+  flex
+  w-full
+  h-full
+  px-4
+  overflow-hidden 
+}
+
+/* BODY */
+.ledger-body {
+  @apply
+  relative
+  flex 
+  flex-1
+  flex-col
+  overflow-hidden
+}
+
+.ledger-row {
+  @apply
+    flex
+    items-center
+    justify-between
+    gap-6
+    w-full
+    my-0.5
+    p-2
+}
+
+/* Hide hash on mobile */
+.ledger-hash-icon {
+  @apply
+  flex
+  items-center
+  justify-center
+  w-8
+  h-8
+  border
+  rounded-md
+  border-iron 
+  bg-onyx 
+  text-steel-blue;
+}
+
+.ledger-event {
+  @apply
+  flex-1
+  rounded-md
+  border
+  border-iron 
+  bg-amber-500
+  px-2
+  py-2
+}
+
+.ledger-row-head .ledger-event {
+  @apply
+  border-harvest-gold/40;
+}
+
+.event-header {
+  @apply
+  flex
+  w-full
+  h-8
+  items-center
+  justify-between
+}
+
+.event-timestamp {
+  @apply text-[8px] font-jetbrains-mono uppercase text-steel-blue;
+}
+
+.event-message {
+  @apply
+  flex 
+  flex-1
+  pt-1
+  text-[9px] font-mono text-steel-blue
+}
+
+.event-id {
+  @apply text-steel-blue/50 mr-2 font-jetbrains-mono text-[8px];
+}
+
+/* Badges (quiet, inline) */
+.event-badge {
+  @apply
+  flex
+  items-center
+  py-1
+  px-2
+  text-[8px] 
+  uppercase 
+  font-mono
+  rounded border;
+}
+
+.badge-system {
+  @apply border-steel-blue/30 text-steel-blue;
+}
+
+.badge-user_message {
+  @apply border-pale-cloud/20 text-pale-cloud;
+}
+
+.badge-reflection {
+  @apply border-sky-blue/30 text-sky-blue;
+}
+
+.badge-commitment_open {
+  @apply border-emerald-400/30 text-emerald-400;
+}
+
+.badge-system_event {
+  @apply
+  flex
+  items-center
+  border-slate-gray text-pure-white/40
+  bg-ocean-depth;
+}
+
+.badge-identity_ratify {
+@apply
+  border-amethyst-purple/30 text-amethyst-purple;
+}

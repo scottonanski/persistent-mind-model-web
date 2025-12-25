@@ -1,0 +1,74 @@
+@import "./index.css";
+
+.system-telemetry {
+    @apply
+    relative
+    hidden
+    overflow-hidden 
+    md:flex 
+    items-center
+    justify-start 
+    gap-8 
+    w-full 
+    pb-7
+    pt-8
+    md:px-4  
+    bg-void-black
+    backdrop-blur-xl 
+    text-[10px]
+    font-mono 
+    uppercase 
+    text-gray-500
+     whitespace-nowrap 
+     tracking-wider 
+     border-b border-steel-blue/20 
+     z-40;
+}
+
+.online-indicator {
+    @apply flex items-center gap-1 text-emerald-500;
+}
+
+.online-indicator span {
+    @apply flex items-center;
+}
+
+.online-indicator span:first-child {
+    @apply relative flex items-center h-2 w-2;
+}
+
+.online-indicator span:first-child span:first-child {
+    @apply animate-ping absolute -left-0.5 inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80;
+}
+
+.online-indicator span:first-child span:last-child {
+    @apply relative inline-flex rounded-full h-1 w-1 bg-emerald-500;
+}
+
+.metric-item {
+    @apply flex items-center gap-2;
+}
+
+.metric-item--uptime {
+    @apply ml-auto md:flex;
+}
+
+.metric-label {
+    @apply text-gray-600;
+}
+
+.metric-value {
+    @apply text-gray-200;
+}
+
+.metric-value--hash {
+    @apply text-antique-gold/80;
+}
+
+.metric-value--default {
+    @apply text-gray-300;
+}
+
+.metric-value--consensus {
+    @apply text-blue-400/80;
+}

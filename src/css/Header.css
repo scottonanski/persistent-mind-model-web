@@ -1,0 +1,116 @@
+@import "./index.css";
+
+header {
+  @apply
+fixed top-0 left-0 right-0 z-50
+}
+
+.header.open {
+  @apply
+  bg-void-black/20
+}
+
+header .desktop-nav {
+  @apply
+  flex
+  items-center
+  justify-between
+  h-14
+  px-6
+  md:px-12 
+  bg-void-black/80
+  border-b 
+  border-slate-gray
+  backdrop-blur-md 
+}
+
+.desktop-nav .logo {
+  @apply
+  flex
+  items-center
+  gap-3
+  font-jetbrains-mono
+  text-sm
+  font-bold
+  text-white 
+  tracking-widest 
+  uppercase
+}
+
+.desktop-nav .logo span {
+  @apply
+  text-harvest-gold
+  font-normal
+}
+
+.desktop-nav .menu-items {
+  @apply
+  flex
+  items-center 
+  gap-6
+}
+
+.desktop-nav .menu-items a {
+  @apply
+  font-jetbrains-mono
+  text-xs
+  font-normal
+  text-white/70
+  tracking-wider
+  uppercase
+  transition-colors
+  hover:text-white
+  cursor-pointer
+}
+
+/* Mobile Nav Button */
+.mobile-nav {
+  @apply absolute flex items-center justify-center h-15 w-15 right-0 top-0 text-white/35 cursor-pointer transition-colors hover:text-white/70 md:hidden;
+}
+
+/* Closed */
+.mobile-menu-dropdown {
+  @apply fixed
+  md:hidden 
+  top-16
+  left-0
+  right-0
+  bg-void-black/10
+  backdrop-blur-2xl
+  border-b 
+  border-steel-blue
+  z-40 
+  transition-transform
+  duration-300
+  ease-in-out 
+  -translate-y-full
+  max-h-0 
+  opacity-0 
+  overflow-hidden;
+}
+
+/* Open */
+.mobile-menu-dropdown.open {
+  @apply translate-y-0
+  opacity-100 
+  max-h-96 
+  transition-transform 
+  duration-400
+  z-40;
+}
+
+.mobile-menu-dropdown ul {
+  @apply flex flex-col;
+}
+
+.mobile-menu-dropdown ul li {
+  @apply border-b border-white/5 flex items-center h-full py-4 pl-4;
+}
+
+.mobile-menu-dropdown ul li:last-child {
+  @apply border-b-0;
+}
+
+.mobile-menu-dropdown ul li a {
+  @apply flex-1 items-center justify-center font-mono text-xs tracking-wide text-gray-500 transition-all hover:text-white hover:bg-white/5 hover:pl-8 uppercase;
+}

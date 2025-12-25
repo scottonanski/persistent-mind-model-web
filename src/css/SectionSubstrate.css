@@ -1,0 +1,596 @@
+@import "./index.css";
+
+.section-substrate {
+    @apply 
+    relative 
+    w-full 
+    flex 
+    flex-col 
+    items-center 
+    py-24
+    px-4
+    justify-center 
+    bg-void-black 
+    font-sans
+    z-10;
+}
+
+.section-substrate .wrapper {
+    @apply
+    mx-auto
+    max-w-7xl
+    px-10
+    space-y-10
+}
+
+/* --- Section Header --- */
+.section-substrate .substrate-intro {
+    @apply
+    relative
+    text-center 
+    mb-16 
+    space-y-4 
+    max-w-2xl 
+    mx-auto;
+}
+
+
+.section-substrate .substrate-intro h1 {
+    @apply 
+    text-5xl 
+    text-pure-white
+    mt-4
+    mb-4
+    leading-tight
+    tracking-tight
+}
+
+.section-substrate .substrate-intro span {
+    @apply 
+    text-5xl 
+    text-summit-gold
+    mt-4
+    mb-4
+    leading-tight
+    tracking-tight
+}
+
+
+.section-substrate .substrate-intro p {
+    @apply 
+    text-steel-blue 
+    text-base 
+    leading-relaxed
+    mt-10
+}
+
+.section-substrate .section-header {
+    @apply 
+    relative
+    flex
+    items-center
+    justify-between
+    border
+    border-iron
+    bg-onyx
+    rounded-t-2xl
+    px-4
+    py-5
+    mb-2
+    w-full
+    max-w-7xl
+    shadow-sm
+    shadow-black
+}
+
+.section-header .section-badge {
+    @apply
+    shadow-sm
+    rounded-full
+    shadow-black
+}
+
+.section-header .section-badge h3 {
+    @apply
+    text-[10px]
+    font-jetbrains-mono
+    tracking-widest
+    text-pretty
+    uppercase
+    text-steel-blue
+    border
+    border-steel-blue/90
+    rounded-full
+    px-3
+    py-1
+    bg-iron/70
+}
+
+.section-substrate .section-header h2 {
+    @apply
+    text-2xl
+    font-semibold
+    tracking-tight 
+    text-pure-white/90
+}
+
+.section-substrate .section-header span {
+    @apply
+    text-sky-blue/80
+}
+
+/* --- Main Dashboard Container --- */
+.section-substrate .dashboard-card {
+    @apply 
+    relative 
+    w-full
+    max-w-7xl
+    bg-onyx 
+    border 
+    border-iron 
+    rounded-b-md
+    overflow-hidden 
+    shadow-md
+    shadow-black/50;
+}
+
+/* Custom Gold Dot Grid for this section */
+.section-substrate .dashboard-bg {
+    @apply
+    absolute
+    inset-0
+    opacity-10
+    pointer-events-none;
+}
+
+/*----------------------------- 
+    # Ledger Header
+-----------------------------*/
+.section-substrate .ledger-header {
+    @apply 
+    relative 
+    flex 
+    flex-col 
+    md:flex-row 
+    items-start 
+    md:items-center 
+    justify-between 
+    gap-4 
+    p-4 
+    border-b 
+    z-20 
+    border-iron 
+    font-jetbrains-mono
+    bg-onyx
+    backdrop-blur-sm 
+    text-[8px] 
+}
+
+.section-substrate .ledger-header .strip-left {
+    @apply
+    flex
+    items-center
+}
+
+.section-substrate .ledger-header .strip-right {
+    @apply
+    flex 
+    items-center 
+    gap-2
+}
+
+/* Badges within the strip */
+.badge-ledger {
+    @apply 
+    px-2 py-1 rounded 
+    border border-harvest-gold/40 
+    bg-harvest-gold/10 
+    text-harvest-gold 
+}
+
+.badge-runtime {
+    @apply
+    flex
+    items-center
+    justify-center
+    gap-2
+    px-4
+    py-2
+    text-[8px]
+    rounded-full
+    border
+    border-iron 
+    bg-onyx 
+    text-pure-white/40
+    font-jetbrains-mono
+    tracking-widest
+}
+
+/* --- Swap Chain Area --- */
+.section-substrate .chain-visualizer {
+    @apply 
+    relative 
+    z-10 
+    flex 
+    flex-col 
+    gap-8
+    py-8
+    px-4
+    items-center;
+}
+
+.section-substrate .chain-container {
+    @apply 
+    w-full
+    bg-void-black 
+    border 
+    border-iron 
+    rounded-md 
+    px-2
+    py-2;
+}
+
+.section-substrate .chain-label {
+    @apply 
+    flex 
+    items-center 
+    gap-4
+    w-full
+    font-jetbrains-mono 
+    text-[12px] 
+    uppercase 
+    text-steel-blue
+    pl-2
+}
+
+.section-substrate .chain-label .chain-icon {
+     @apply
+    w-6
+    h-6
+    p-1
+    bg-void-black
+    border
+    rounded-md
+    text-cornflower-blue/550;
+}
+
+.section-substrate .chain-grid {
+    @apply
+    flex 
+    flex-wrap 
+    items-center
+    justify-center
+    gap-2;
+}
+
+/* --- The Nodes --- */
+.chain-node {
+    @apply 
+    relative
+    flex 
+    flex-col 
+    flex-1
+    gap-1 
+    px-4
+    py-3 
+    rounded-md
+    border 
+    min-w-[160px] 
+    font-jetbrains-mono;
+}
+
+/* Inactive State */
+.chain-node.inactive {
+    @apply 
+    bg-void-black
+    border-iron/70 
+    text-steel-blue;
+}
+
+/* Active/Current State */
+.chain-node.active {
+    @apply 
+    bg-sage-green/10
+    border-sage-green/30
+    text-sage-green/60 
+    shadow-[0_0_30px_-3px] 
+    shadow-sage-green/10;
+}
+
+.chain-node .node-header {
+    @apply
+    flex
+    items-center
+    justify-between
+    mb-1
+    font-jetbrains-mono
+    uppercase
+    tracking-widest
+    text-[10px]
+    font-bold;
+}
+
+.chain-node .node-model {
+    @apply 
+    flex 
+    items-center 
+    gap-2
+    text-sm font-bold uppercase;
+}
+/* Handle text color inside node based on parent class */
+.chain-node.active .node-model { @apply text-pure-white; }
+.chain-node.inactive .node-model { @apply text-silver-mist; }
+
+.chain-node .node-note {
+    @apply text-[10px]
+    font-jetbrains-mono
+    flex
+    items-center
+    justify-between
+}
+.chain-node.active .node-note { @apply text-harvest-gold/80; }
+.chain-node.inactive .node-note { @apply text-steel-blue; }
+
+.connector-arrows {
+    @apply
+    text-sage-green
+    bg-void-black
+    shrink-0
+    w-6
+    h-6
+    p-1
+    rounded-full
+    border
+    border-iron
+    flex
+    items-center
+    justify-center
+}
+/* --- Bottom Quote Area --- */
+.section-substrate .quote-section {
+    @apply flex flex-col items-center gap-8 max-w-2xl w-full;
+}
+
+.section-substrate .hash-pill {
+    @apply 
+    flex items-center gap-2
+    bg-onyx/50 
+    px-4 py-2 rounded-full 
+    border border-iron;
+}
+
+.verified-substrate {
+    @apply
+    relative
+    mx-auto 
+    px-6  
+     shadow-sm
+    
+}
+
+.verified-substrate .verified-header {
+    @apply 
+    relative
+    flex
+    items-center
+    justify-between
+    border
+    border-iron
+    bg-onyx
+    rounded-t-2xl
+    px-8
+    py-4
+    mb-2
+    shadow-sm
+    shadow-black
+}
+
+.verified-substrate .verified-header h2 {
+    @apply
+    block
+    text-base
+    text-white/70
+    tracking-widest
+    leading-none
+    pt-1
+}
+
+.verified-substrate .proof-badge {
+    @apply
+    flex
+    items-center
+    justify-center
+    text-sage-green/50
+    uppercase
+    font-jetbrains-mono
+    text-[10px]
+    leading-none
+    tracking-widest
+}
+
+.verified-substrate .verified-icon {
+    @apply
+    w-8
+    h-8
+    p-2
+}
+
+.verified-substrate .card {
+    @apply
+    grid
+    grid-cols-1 
+    lg:grid-cols-2 
+    gap-0 
+    lg:gap-px 
+    bg-void-black
+    border 
+    border-slate-gray
+    rounded-b-md
+    overflow-hidden 
+    shadow-sm
+    shadow-black
+}
+
+
+.verified-substrate .card .left-col {
+    @apply
+    relative
+    px-8
+    py-4
+    font-jetbrains-mono 
+    text-xs 
+    leading-relaxed 
+    bg-void-black
+}
+
+.verified-substrate .source-heading {
+    @apply
+    absolute
+    top-4
+    right-4 
+    text-gray-700 
+    uppercase 
+    tracking-widest
+    text-[10px]
+}
+
+.verified-substrate .event-id-heading {
+    @apply
+    text-slate-gray
+    mb-2
+}
+
+.verified-substrate .system-event-heading {
+    @apply
+text-blue-400
+    mb-8
+}
+
+.verified-substrate .json-payload {
+    @apply
+    text-gray-400
+    mb-8
+}
+
+.verified-substrate .json-payload:last-child {
+    @apply
+ pb-0
+}
+
+.verified-substrate .card .right-col {
+    @apply
+    relative
+    flex
+    flex-col
+    justify-center
+    p-8 
+    bg-void-black
+}
+
+.section-substrate .quote-box {
+    @apply
+   bg-void-black
+   border 
+   border-slate-gray 
+   px-8 
+   py-6 
+  rounded-lg 
+   mb-6 
+   relative
+   z-10
+}
+
+.section-substrate .quote-check {
+    @apply
+   absolute 
+   -left-3 
+   top-1/2 
+   -translate-y-1/2 
+   w-6 
+   h-6
+   flex 
+   justify-center
+   rounded-full
+   items-center 
+   text-sage-green/30
+   fill-void-black
+
+}
+
+.section-substrate .quote-text {
+    @apply
+    text-pure-white/50
+    font-jetbrains-mono
+    text-sm
+    leading-relaxed
+}
+
+.section-substrate .agent-output-subtext {
+    @apply
+    flex
+    flex-col
+    items-center
+    mt-4
+    gap-4
+
+    pb-4
+}
+
+.section-substrate .agent-output-subtext div {
+    @apply
+    flex
+    items-center
+    gap-2
+}
+
+.section-substrate .agent-output-subtext .subtext-icon {
+    @apply
+    w-4
+    h-4
+}
+
+.subtext-icon.terminal {
+    @apply
+    text-steel-blue
+}
+
+.subtext-icon.circle-check {
+    @apply
+    text-sage-green
+}
+
+.section-substrate .agent-output-subtext p {
+    @apply
+    text-center
+    text-pale-cloud
+    text-sm
+    leading-none
+}
+
+.section-substrate .verified-subtext {
+    @apply
+    flex
+    items-center
+    justify-center
+    gap-2
+    py-6
+    mt-4
+    text-[10px]
+    font-jetbrains-mono
+    uppercase
+    tracking-widest
+    bg-black/40
+        border-b-2
+        border-t-2
+    border-slate-gray
+}
+
+.verification-status {
+    @apply
+    text-sage-green
+}
+
+.verification-value {
+    @apply
+    text-summit-gold
+}

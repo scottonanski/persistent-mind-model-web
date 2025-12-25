@@ -1,0 +1,56 @@
+@import "./index.css";
+
+.blur-xl {
+  @apply
+    absolute
+    top-7/12
+    left-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+    w-full
+    max-w-[1280px]
+    h-2/3
+    opacity-6
+    pointer-events-none
+    blur-3xl
+    bg-radial from-summit-gold from-10% to-transparent
+}
+
+.blur-100px {
+  @apply
+  absolute
+  top-1/2
+  left-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+  w-[600px]
+  h-[600px]
+  bg-summit-gold/5
+  rounded-full
+  blur-[100px]
+  pointer-events-none
+}
+
+.card-blur {
+  @apply
+    absolute
+    top-0
+    left-0
+    w-full
+    h-full
+    opacity-35
+    pointer-events-none
+    z-1
+    backdrop-blur
+    bg-radial from-iron from-10% to-transparent
+}
+
+.radial-grid {
+  @apply
+  absolute
+  inset-0
+  w-full
+  h-full
+
+}
+

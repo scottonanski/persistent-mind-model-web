@@ -1,0 +1,458 @@
+@import "./index.css";
+
+/******************************
+  # Main Container & Wrapper 
+******************************/
+.section-rsm {
+  @apply
+  overflow-hidden
+  relative
+  min-h-screen
+   bg-void-black
+   font-sans 
+   text-pure-white
+   pmm-grid-14
+}
+
+.section-rsm .wrapper {
+  @apply
+  mx-auto
+  max-w-7xl
+  px-4 sm:px-6
+  lg:px-8
+  py-20
+  space-y-10
+}
+
+/******************************
+  # Introduction Header
+******************************/
+.section-rsm .rsm-intro {
+  @apply
+  text-center
+  space-y-4 
+  max-w-3xl
+  mx-auto
+}
+
+.rsm-intro h1 {
+  @apply
+   text-4xl
+   md:text-5xl 
+   font-light
+   tracking-tight
+   text-pure-white
+}
+
+.rsm-intro h1 span {
+  @apply text-summit-gold;
+}
+
+.rsm-intro p {
+  @apply
+  text-steel-blue
+  text-sm
+  md:text-base
+  leading-relaxed
+  max-w-2xl
+  mx-auto
+}
+
+.rsm-intro p span {
+  @apply
+  text-sage-green
+  font-bold
+}
+
+/******************************
+  # Card Rows, Header
+******************************/
+.rsm-card-row {
+  @apply
+  mb-4
+}
+
+.rsm-card-wrapper {
+  @apply
+  grid 
+  grid-cols-1
+  lg:grid-cols-2
+   gap-1
+}
+
+.rsm-card-header {
+  @apply
+     relative
+    flex
+    items-center
+    justify-between
+    border
+    border-iron
+    bg-onyx
+    rounded-t-md
+    px-2
+    py-2
+    shadow-sm
+    shadow-black
+    mb-1
+}
+
+.rsm-card-header .stage-tag {
+  @apply
+  bg-iron/30 
+  text-steel-blue
+  border
+   border-iron
+   rounded
+   w-fit
+   py-1
+   px-2
+   text-[10px]
+   font-jetbrains-mono
+   uppercase
+   tracking-widest
+   self-end
+}
+
+.rsm-card-header h3 {
+  @apply
+  text-lg
+  font-medium
+  text-silver-mist
+}
+
+/******************************
+  # Card Information Blocks
+******************************/
+
+/* RSM Card A*/
+.rsm-card-a {
+  @apply
+bg-onyx
+border
+border-iron
+rounded-bl-md
+p-6 shadow-sm
+shadow-black
+flex
+flex-col
+justify-between
+}
+
+.card-a-wrapper {
+  @apply flex flex-col
+}
+.rsm-card-a h4 {
+  @apply
+  text-sm
+  uppercase
+  tracking-widest
+  text-harvest-gold
+  mb-4
+}
+
+.rsm-card-a p {
+  @apply
+  text-sm
+  text-pale-cloud
+  leading-relaxed
+  mb-4
+}
+
+.rsm-card-a code {
+  @apply
+  text-sage-green
+  text-xs
+}
+
+.rsm-card-a .ledger-events-group {
+  @apply
+  space-y-2
+  mt-6
+}
+
+.rsm-card-a .event-item {
+  @apply
+  flex
+  items-center
+  gap-2
+  text-[10px]
+  font-jetbrains-mono 
+  text-steel-blue 
+}
+
+.rsm-card-a .ledger-impact {
+  @apply
+  mt-6
+  pt-4
+  border-t
+  border-iron/50
+}
+
+.ledger-impact span {
+  @apply
+  text-[10px]
+  uppercase 
+  text-steel-blue
+}
+
+.ledger-impact p {
+  @apply
+  text-xs 
+  text-silver-mist
+  mt-1
+}
+
+/* RSM Card B */
+.rsm-card-b {
+  @apply
+  flex
+  flex-col
+  rounded-br-md
+  border 
+  border-iron
+  bg-void-black 
+  overflow-hidden
+  shadow-sm
+  shadow-black
+}
+
+.rsm-card-b .card-b-header {
+  @apply
+  flex
+  items-center
+  gap-3
+  px-4
+  py-3
+  border-b
+  border-iron
+  bg-onyx/50
+}
+
+.card-b-header .card-b-icon {
+  @apply
+  p-1.5
+  rounded
+  text-steel-blue
+  border
+  border-iron
+  bg-void-black
+}
+
+.card-b-header .card-b-title-wrapper {
+  @apply
+  flex
+  flex-col
+}
+
+.card-b-title {
+  @apply
+  text-xs
+  uppercase
+  tracking-widest 
+  text-pure-white
+  font-bold;
+}
+
+.card-b-subtitle{
+  @apply
+  text-[10px]
+  font-jetbrains-mono
+  text-steel-blue;
+}
+
+.rsm-card-b .card-b-body {
+  @apply
+  relative
+  p-6
+}
+
+.card-b-body .body-b-tag {
+  @apply
+  relative
+  flex
+  items-center
+  justify-end
+  text-[10px] 
+  text-steel-blue
+  font-jetbrains-mono
+  uppercase
+}
+
+.rsm-card-b .card-b-footer {
+  @apply
+  px-4
+  py-2
+  border-t 
+  border-iron 
+  flex
+  justify-between
+  items-center
+}
+
+.rsm-card-b .footer-tag {
+  @apply
+  text-[10px]
+  font-jetbrains-mono 
+  text-steel-blue
+}
+
+.rsm-card-b .footer-tag.marker {
+  @apply
+  bg-sage-green/10
+  px-1
+  text-sage-green
+  rounded
+}
+
+.card-b-body .behavioral-row {
+  @apply
+  space-y-1
+  py-2
+}
+
+.card-b-body .behavioral-row .behavioral-text {
+  @apply
+  flex
+  justify-between
+  text-[10px]
+  font-jetbrains-mono
+  uppercase
+  text-steel-blue
+}
+
+.card-b-body .behavioral-text span:nth-child(2) {
+  @apply
+  text-sage-green
+}
+
+.card-b-body .behavioral-progress-bg {
+  @apply
+  w-full
+  bg-slate-gray
+  h-1
+  rounded
+  overflow-hidden
+}
+
+.behavioral-progress-fg {
+  @apply
+  bg-sage-green
+  h-full
+}
+
+.identity-progress {
+  @apply
+  w-[24%]
+}
+
+.determinism-progress {
+  @apply
+  w-[82%]
+}
+
+.metric-container {
+  @apply
+  py-1
+  rounded
+  mt-2
+  mb-2
+}
+
+.metric-card {
+  @apply
+  flex
+  justify-between
+  items-center
+  my-2
+}
+
+.metric-card .metric-title {
+  @apply
+  text-[10px]
+  font-jetbrains-mono
+  text-harvest-gold
+}
+
+.metric-card span {
+  @apply
+  text-[10px]
+  font-jetbrains-mono
+  text-cornflower-blue
+  uppercase
+  tracking-wider
+}
+
+.metric-container p {
+  @apply
+  text-[9px] 
+  text-steel-blue
+  font-jetbrains-mono
+}
+
+.metric-card .bage-containter {
+  @apply
+  flex
+  flex-wrap
+  gap-2
+}
+
+.json-container {
+  @apply
+  mb-4 pb-4 border-b border-slate-gray/30
+}
+
+.json-container:last-child {
+  @apply
+  border-b-0
+  pb-0
+  mb-0
+}
+
+.loop-indicator {
+  @apply
+  bg-sage-green/10 px-4 py-2 border-t border-sage-green/20 flex justify-center items-center gap-2
+}
+
+.loop-indicator .icon {
+  @apply
+  text-sage-green animate-spin
+  w-3
+  h-3
+}
+
+.loop-indicator span {
+  @apply
+  text-[10px]
+  font-jetbrains-mono 
+  text-sage-green
+}
+
+/******************************
+  # Connector Icon
+******************************/
+
+.connector-icon-wrapper {
+  @apply
+  flex
+  items-center
+  justify-center
+  w-6
+  h-6
+  p-1
+  mx-auto
+    bg-onyx
+    border
+    border-steel-blue/50
+  rounded-full
+
+}
+
+.connector-icon {
+  @apply
+  text-steel-blue/60
+  w-5
+  h-5
+}
+
+

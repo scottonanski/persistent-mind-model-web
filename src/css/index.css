@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+}
+
+@import "tailwindcss";
+@theme {
+
+/*************************************
+# Custom Font Variables
+*************************************/
+--font-jetbrains-mono: 'JetBrains Mono', monospace;
+
+/*************************************
+# Custom Variables Dark Colors
+*************************************/
+
+	--color-midnight-black: #0d0d0d;
+	--color-void-black: #0f0f0f;
+	--color-deep-navy: #0f1115;
+	--color-stormy-slate: #1a1e28;
+	--color-twilight-purple: #1d1626;
+	--color-obsidian: #111010;
+	--color-carbon-black: #111111;
+	--color-charcoal-deep: #121212;
+	--color-shadow-black: #131313;
+	--color-onyx: #151515;
+	--color-forest-night: #161f1a;
+	--color-ocean-depth: #161f23;
+	--color-graphite: #2a2a2a;
+	--color-slate-gray: #2c313c;
+	--color-espresso: #251e12;
+	--color-iron: #292928;
+
+
+/*************************************
+# Custom Variables Mid Colors
+*************************************/
+	--color-steel-blue: #4b5260;
+	--color-olive-shadow: #524a29;
+	--color-midnight-plum: #211a2a;
+	--color-antique-gold: #968339;
+	--color-brass: #a7913d;
+	--color-harvest-gold: #c39f38;
+	--color-sage-green: #59a97f;
+
+
+/*************************************
+# Custom Variables Light Colors
+*************************************/
+	--color-silver-mist: #9ea3ae;
+	--color-pale-cloud: #d2d5db;
+	--color-moss-gold: #6e602b;
+	--color-summit-gold: #cdb148;
+	--color-mint-breeze: #8fe3b9;
+	--color-sky-blue: #9fc3fa;
+	--color-pearl-gray: #a1a1a1;
+	--color-aqua-green: #6ccf9b;
+	--color-pure-white: #ffffff;
+	--color-cornflower-blue: #5f84c7;
+	--color-teal-blue: #4e95a9;
+	--color-amethyst-purple: #966fc9;
+
+  --writing-horizontal: horizontal-tb;
+  --writing-vertical-rl: vertical-rl;
+  --writing-vertical-lr: vertical-lr;
+
+}
+
+/* ----------------------------------
+   Component layer (reusable patterns)
+---------------------------------- */
+@utility pmm-grid-14 {
+  background-color: theme(colors.void-black);
+  background-image:
+    linear-gradient(
+      to right,
+      theme(colors.onyx) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      theme(colors.onyx) 1px,
+      transparent 1px
+    );
+  background-size: 14px 14px; 
+}
+
+@utility pmm-grid-7 {
+  background-color: theme(colors.void-black);
+  background-image:
+    linear-gradient(
+      to right,
+      theme(colors.slate-gray) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      theme(colors.slate-gray) 1px,
+      transparent 1px
+    );
+  background-size: 7px 7px; 
+}
+
+
+@utility radial-grid {
+  background-image: radial-gradient(
+    theme(colors.slate-gray) 1px,
+    transparent 1px
+  );
+  background-size: 8px 8px;
+  opacity: 0.25;
+}
+
+@utility writing-horizontal {
+  writing-mode: var(--writing-horizontal);
+}
+
+@utility writing-vertical-rl {
+  writing-mode: var(--writing-vertical-rl);
+}
+
+@utility writing-vertical-lr {
+  writing-mode: var(--writing-vertical-lr);
+}
+
+
+
+* {
+	@apply
+	text-pretty
+}
+
+body {
+  @apply bg-void-black;
+}
