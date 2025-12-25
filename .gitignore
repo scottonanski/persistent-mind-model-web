@@ -1,0 +1,35 @@
+# Node modules (always ignore – this folder is huge and regenerated with npm install)
+node_modules/
+
+# Build/output folders (Vite generates these)
+dist/
+build/
+
+# Environment variables (never commit secrets!)
+.env
+.env.local
+.env.development
+.env.production
+*.env
+
+# Logs and caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.cache/
+.vite/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+coverage/
